@@ -1,0 +1,41 @@
+html,
+body {
+	height: 100%;
+}
+
+.my-container {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.my-title {
+  margin-top: 1em;
+}
+
+.tab-pane {
+  height: 100%;
+  flex: 4;
+}
+
+.convo-main {
+  flex: 1;
+}
+
+.convo-tracker {
+  overflow-y: auto;
+}
+
+#myTabContent {
+  height: 100%;
+  display: flex;
+}
+
+.chart-container {
+  max-width: 60%;
+  height: 90%;
+  margin: auto;
+  margin-top : 30px;
+}
