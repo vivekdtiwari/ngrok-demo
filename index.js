@@ -25,9 +25,13 @@ app.ws('/command',(ws,req) => {
 
   app.post('/command',(request,response) => {
     try {
-      console.log(request.body.message);
+      console.log(request.body);
         ws.send(JSON.stringify({
-          message: request.body.message
+          message: request.body.message,
+          info : request.body.info,
+          params: request.body.params,
+          spec_name: request.body.spec_name,
+          val_name: request.body.val_name
         }));
         response.send("Message Transferred");
     } catch (e) {
